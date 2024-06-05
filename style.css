@@ -71,6 +71,7 @@ main {
     border: 10px solid #16c28e;
     overflow: hidden;
     text-overflow: circle;
+    
              /* portfolio styles */
              .content h1 {
                 color: black;
@@ -89,7 +90,7 @@ main {
             }
    
             #portfolio li:hover {
-                background: #eee;
+                background: #eeeeee;
             }
    
             #portfolio a {
