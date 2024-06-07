@@ -16,7 +16,7 @@ $(function () {
       setInterval(main, 1000 / frameRate);
     }
     //create walls
-    createPlatform(-50, -50, canvas.width + 100, 50); //top
+    createPlatform(-70, -50, canvas.width + 100, 50); //top
     createPlatform(-50, canvas.height - 10, canvas.width + 100, 200); //right
     createPlatform(-50, -50, 50, canvas.height + 500); //bottom
     createPlatform(canvas.width, -50, 50, canvas.height + 100);
@@ -43,36 +43,37 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-
-    createPlatform(400, 600, 50, 20);
-    createPlatform(300, 40, 50, 20);
-    createPlatform(500, 200, 60, 20);
-    createPlatform(150, 70, 40, 20);
-    createPlatform(340, 80, 50, 20);
-    createPlatform(170, 400, 100, 50);
-    createPlatform(20, 600, 30, 20);
+    createPlatform(300, 400, 50, 100000)
+    createPlatform(180, 400, 40, 9)
+    createPlatform(10, 610, 50, 14)
+    createPlatform(400, 500, 50, 14)
+    createPlatform(100, 500, 50, 16)
+    createPlatform(300, 1, 60, 100)
+    createPlatform(250, 300, 50, 10)
+    createPlatform(500, 450, 50, 10)
+    createPlatform(600, 640, 50, 10)
+    createPlatform(530,550, 50, 5)
+   
 
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-
-    createCollectable("socks", 300, 40, 50, 20); // creates a "socks" collectible at the coordinates (300, 40, 50, 20), falling with a high gravity of 100, and bouncing with 40% bounce
-    createCollectable("grace", 150, 70, 40, 20); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
-    createCollectable("database", 170, 400, 100, 50);
-    createCollectable("vbucks", 20, 600, 30, 20);
-
+    createCollectable("steve", 500, 400, 20, 0.3)
+    createCollectable("bugtata", 400, 400, 5, 0.6)
+    createCollectable("toe", 180, 300, 8, 1)
+    createCollectable("database", 540, 510, 0, 0.5)
     // TODO 3
     // Create cannons
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-    createCannon("right", 306, 1000, 20, 50);
-    createCannon("left", 600, 1000); 
-    createCannon("left", 600, 1000); 
-    createCannon("bottom", 600, 1000);
-    createCannon("top", 600, 1000); 
+    createCannon("right", 306, 2000, 20);
+    createCannon("left", 600, 2000); 
+    createCannon("left", 600, 2000); 
+    createCannon("bottom", 600, 2000);
+    createCannon("top", 600, 1500); 
 
 
     /////////////////////////////////////////////////
