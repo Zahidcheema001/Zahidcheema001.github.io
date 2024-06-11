@@ -62,8 +62,8 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
-
+			var myVariable = 0;
+			var positionX = 0;
 			
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
@@ -71,8 +71,18 @@
 			turn it around! 
 			*/
 			function update() {
-				
-
+				myVariable = myVariable + 10;
+				/* Your Code to Increase positionX by 10 HERE */
+				moveBoxTo(positionX);
+				positionX = 0 + 10; 
+				myVariable = myVariable + 10;
+				moveBoxTo(positionX);
+				positionX = 10 + 10;
+				moveBoxTo(positionX);
+				positionX = 20 + 10;
+				moveBoxTo(positionX);
+				positionX = 30 + 10; 
+				moveBoxTo(positionX);
 			};
 
 			/* 
