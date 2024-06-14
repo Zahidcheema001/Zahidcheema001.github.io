@@ -5,10 +5,16 @@
 	<title>Bouncing Box</title>
 	<script src="jquery.min.js"></script>
 	<style>
+		body {
+	background-image: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/1354F/production/_86838197_misonsereap.jpg");
+	background-size: 100%;
+
+		}
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSji9GvMokB5YqYNctNLDWK4LltyzNBpqeLdw&s");
+			background-size: 110%;
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -16,6 +22,8 @@
 			position: absolute;
 			top: 100px;
 			left: 0px;  /* <--- Change me! */
+			body {
+}
 		}
 		.board{
 			height: 100vh;
@@ -25,9 +33,9 @@
 
 </head>
 <body class="board">
+	
 	<!-- HTML for the box -->
 	<div class="box">?</div>
-
 	<script>
 		(function(){
 			'use strict'
@@ -76,7 +84,10 @@
 				if (positionX > boardWidth){
 					speed = -speed;
 				}
-
+				if (positionX < 0) {
+					speed = -speed;
+				}
+				
 			};
 			
 			/* 
@@ -87,7 +98,13 @@
 			function handleBoxClick() {
 				positionX = 0;
 				changeBoxText(1)
-				speed = speed + 3;
+				speed = speed + 5;
+				if (speed > 0){
+					speed = +speed
+				}
+				else if (speed < 0){
+					speed = -speed
+				}
 			};
 		})();
 	</script>
