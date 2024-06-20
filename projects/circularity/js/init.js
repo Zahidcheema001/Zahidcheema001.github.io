@@ -30,8 +30,11 @@ var init = function (window) {
         circles.push(circle);
 
         // TODO 3 / 7 : Call the drawCircle() function 
+        nameOfFunction(drawcircle);
         nameOfFunction();
-
+        nameOfFunction();
+        nameOfFunction();
+        nameOfFunction();
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
