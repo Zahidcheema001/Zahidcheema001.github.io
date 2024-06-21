@@ -30,8 +30,8 @@ var init = function (window) {
         circles.push(circle);
 
         // TODO 3 / 7 : Call the drawCircle() function 
-        for (var loopsCompleted = 0; loopsCompleted < 10; loopsCompleted++) {
-            loopsCompleted = [0]
+        for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++) {
+            drawCircle();
           }
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -55,9 +55,12 @@ var init = function (window) {
             game.checkCirclePosition(circles[2]);
             game.checkCirclePosition(circles[3]);
             game.checkCirclePosition(circles[4]);
+            for (var i = 0; i < myArray.length; i++) {
+                i = myArray.length
+              }
             // TODO 9 : Iterate over the array
-           
-            
+            physikz.updatePosition(circles[i])
+            game.checkCirclePosition(circles[i])
         }
     
         /* 
@@ -73,6 +76,7 @@ var init = function (window) {
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
+
             
 
 
